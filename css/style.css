@@ -101,16 +101,17 @@
 
 /* ===== Header with Background Image ===== */
 .site-header {
+  position: relative;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px 40px; /* top padding increased so logo doesn't overlap */
   background: url("../images/pattern.jpg") no-repeat center center/cover;
   border-radius: 12px;
   margin: 20px auto;
   max-width: 95%;
   box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-  position: relative;
   overflow: hidden;
 }
+
 
 /* Dark overlay for readability */
 .site-header::before {
@@ -132,11 +133,13 @@
 /* ===== Logo in Top-Left ===== */
 .site-logo {
   position: absolute;
-  top: 15px;
-  left: 20px;
-  height: 50px;  /* adjust as needed */
-  z-index: 2;
+  top: 10px;   /* push to top */
+  left: 15px;  /* push to left corner */
+  height: 40px;  /* make smaller (adjust as needed) */
+  width: auto;   /* keeps proportions */
+  z-index: 10;   /* make sure it stays above */
 }
+
 
 /* ===== Hamburger Menu Button ===== */
 .menu-btn {
@@ -208,3 +211,4 @@
   margin: 10px 0;
   font-size: 1rem;
 }
+
