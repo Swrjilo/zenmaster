@@ -133,9 +133,9 @@
 /* ===== Logo in Top-Left ===== */
 .site-logo {
   position: absolute;
-  top: 10px;   /* push to top */
-  left: 15px;  /* push to left corner */
-  height: 40px;  /* make smaller (adjust as needed) */
+  top: 8px;   /* push to top */
+  left: 12px;  /* push to left corner */
+  height: 35px;  /* make smaller (adjust as needed) */
   width: auto;   /* keeps proportions */
   z-index: 10;   /* make sure it stays above */
 }
@@ -211,4 +211,5 @@
   margin: 10px 0;
   font-size: 1rem;
 }
+
 
